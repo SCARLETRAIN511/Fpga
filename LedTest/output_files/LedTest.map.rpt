@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LedTest
-Sun Jul 12 18:45:23 2020
+Mon Jul 13 13:17:50 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 12 18:45:23 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 13 13:17:50 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; LedTest                                     ;
 ; Top-level Entity Name              ; LedTest                                     ;
@@ -163,13 +163,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
-; LedTest.v                        ; yes             ; User Verilog HDL File  ; C:/Users/msipc/Desktop/code/FPGA/LedTest.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; LedTest.v                        ; yes             ; User Verilog HDL File  ; C:/Users/msipc/Desktop/code/Fpga/LedTest/LedTest.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -266,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -276,12 +276,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Jul 12 18:44:58 2020
+    Info: Processing started: Mon Jul 13 13:17:31 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LedTest -c LedTest
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ledtest.v
-    Info (12023): Found entity 1: LedTest File: C:/Users/msipc/Desktop/code/FPGA/LedTest.v Line: 31
+    Info (12023): Found entity 1: LedTest File: C:/Users/msipc/Desktop/code/Fpga/LedTest/LedTest.v Line: 4
 Info (12127): Elaborating entity "LedTest" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -291,9 +291,9 @@ Info (21057): Implemented 78 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 72 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Sun Jul 12 18:45:23 2020
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:01:03
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Mon Jul 13 13:17:50 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:49
 
 
