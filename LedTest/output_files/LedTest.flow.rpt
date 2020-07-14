@@ -1,5 +1,5 @@
 Flow report for LedTest
-Mon Jul 13 13:18:12 2020
+Tue Jul 14 15:14:26 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 13 13:18:06 2020       ;
+; Flow Status                        ; Successful - Tue Jul 14 15:14:21 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; LedTest                                     ;
 ; Top-level Entity Name              ; LedTest                                     ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/13/2020 13:17:33 ;
+; Start date & time ; 07/14/2020 15:13:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LedTest             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1097123556021.159461745218904          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1097123556021.159471083102116          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4807 MB             ; 00:00:49                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 5674 MB             ; 00:00:12                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4798 MB             ; 00:00:04                           ;
-; Total                     ; 00:00:37     ; --                      ; --                  ; 00:01:08                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4796 MB             ; 00:00:48                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 5637 MB             ; 00:00:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4686 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4783 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:33     ; --                      ; --                  ; 00:01:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

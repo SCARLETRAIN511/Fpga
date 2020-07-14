@@ -33,7 +33,7 @@ module seg_test(
                 output[7:0]seg_data
                 );
 					 
-reg[31:0] timer_cnt;
+reg[31:0] timer_cnt;//寄存器 32位
 reg en_1hz;                          //1 second , 1 counter enable
 always@(posedge clk or negedge rst_n)
 begin

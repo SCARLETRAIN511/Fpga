@@ -1,5 +1,5 @@
 Fitter report for LedTest
-Mon Jul 13 13:18:01 2020
+Tue Jul 14 15:14:16 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jul 13 13:18:01 2020       ;
+; Fitter Status                      ; Successful - Tue Jul 14 15:14:16 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; LedTest                                     ;
 ; Top-level Entity Name              ; LedTest                                     ;
@@ -157,7 +157,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.5%      ;
+;     Processors 2-6         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -226,7 +226,7 @@ The pin-out file can be found in C:/Users/msipc/Desktop/code/Fpga/LedTest/output
 ;     -- Dedicated logic registers            ; 36 / 10,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 852 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 6 / 645 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 5 / 645 ( < 1 % )     ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 6 / 180 ( 3 % )       ;
 ;     -- Clock pins                           ; 1 / 3 ( 33 % )        ;
@@ -281,7 +281,7 @@ The pin-out file can be found in C:/Users/msipc/Desktop/code/Fpga/LedTest/output
 ;     -- Dedicated logic registers            ; 36 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 6 / 645 ( < 1 % )    ; 0 / 645 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 5 / 645 ( < 1 % )    ; 0 / 645 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 6                    ; 0                              ;
@@ -679,7 +679,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; led[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; clk    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; rst_n  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; rst_n  ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
 +--------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -718,26 +718,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - timer[25]    ; 1                 ; 6       ;
 ;      - timer[26]    ; 1                 ; 6       ;
 ;      - timer[27]    ; 1                 ; 6       ;
-;      - timer[28]    ; 1                 ; 6       ;
+;      - timer[28]    ; 0                 ; 6       ;
 ;      - timer[29]    ; 1                 ; 6       ;
 ;      - timer[30]    ; 1                 ; 6       ;
 ;      - timer[31]    ; 1                 ; 6       ;
-;      - led[0]~reg0  ; 1                 ; 6       ;
-;      - led[1]~reg0  ; 1                 ; 6       ;
-;      - led[2]~reg0  ; 1                 ; 6       ;
-;      - led[3]~reg0  ; 1                 ; 6       ;
+;      - led[0]~reg0  ; 0                 ; 6       ;
+;      - led[1]~reg0  ; 0                 ; 6       ;
+;      - led[2]~reg0  ; 0                 ; 6       ;
+;      - led[3]~reg0  ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                      ;
-+----------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk      ; PIN_E1            ; 36      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; led[1]~0 ; LCCOMB_X33_Y4_N24 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; rst_n    ; PIN_N13           ; 36      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+----------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                     ;
++----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name     ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk      ; PIN_E1           ; 36      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; led[1]~0 ; LCCOMB_X33_Y5_N8 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; rst_n    ; PIN_N13          ; 36      ; Async. clear ; no     ; --                   ; --               ; --                        ;
++----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -745,7 +745,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_E1   ; 36      ; 5                                    ; Global Clock         ; GCLK2            ; --                        ;
+; clk  ; PIN_E1   ; 36      ; 9                                    ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -754,23 +754,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 74 / 32,401 ( < 1 % ) ;
-; C16 interconnects     ; 3 / 1,326 ( < 1 % )   ;
-; C4 interconnects      ; 32 / 21,816 ( < 1 % ) ;
-; Direct links          ; 30 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 71 / 32,401 ( < 1 % ) ;
+; C16 interconnects     ; 5 / 1,326 ( < 1 % )   ;
+; C4 interconnects      ; 33 / 21,816 ( < 1 % ) ;
+; Direct links          ; 21 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
-; Local interconnects   ; 50 / 10,320 ( < 1 % ) ;
-; R24 interconnects     ; 2 / 1,289 ( < 1 % )   ;
-; R4 interconnects      ; 34 / 28,186 ( < 1 % ) ;
+; Local interconnects   ; 51 / 10,320 ( < 1 % ) ;
+; R24 interconnects     ; 1 / 1,289 ( < 1 % )   ;
+; R4 interconnects      ; 35 / 28,186 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 11.50) ; Number of LABs  (Total = 6) ;
+; Number of Logic Elements  (Average = 13.80) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -784,15 +784,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 1                           ;
-; 16                                          ; 3                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.67) ; Number of LABs  (Total = 6) ;
+; LAB-wide Signals  (Average = 2.00) ; Number of LABs  (Total = 5) ;
 +------------------------------------+-----------------------------+
 ; 1 Async. clear                     ; 5                           ;
 ; 1 Clock                            ; 5                           ;
@@ -802,10 +802,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 17.50) ; Number of LABs  (Total = 6) ;
+; Number of Signals Sourced  (Average = 21.00) ; Number of LABs  (Total = 5) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
-; 1                                            ; 1                           ;
+; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
@@ -823,70 +823,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 16                                           ; 0                           ;
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
-; 19                                           ; 1                           ;
+; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 1                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 1                           ;
+; 21                                           ; 1                           ;
+; 22                                           ; 1                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 1                           ;
+; 25                                           ; 0                           ;
 ; 26                                           ; 0                           ;
 ; 27                                           ; 0                           ;
 ; 28                                           ; 0                           ;
-; 29                                           ; 1                           ;
+; 29                                           ; 0                           ;
+; 30                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 9.17) ; Number of LABs  (Total = 6) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 1                           ;
-; 7                                               ; 0                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 1                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 0                           ;
-; 15                                              ; 0                           ;
-; 16                                              ; 2                           ;
-+-------------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++--------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 10.80) ; Number of LABs  (Total = 5) ;
++--------------------------------------------------+-----------------------------+
+; 0                                                ; 0                           ;
+; 1                                                ; 0                           ;
+; 2                                                ; 0                           ;
+; 3                                                ; 0                           ;
+; 4                                                ; 0                           ;
+; 5                                                ; 1                           ;
+; 6                                                ; 0                           ;
+; 7                                                ; 1                           ;
+; 8                                                ; 0                           ;
+; 9                                                ; 0                           ;
+; 10                                               ; 1                           ;
+; 11                                               ; 0                           ;
+; 12                                               ; 0                           ;
+; 13                                               ; 0                           ;
+; 14                                               ; 0                           ;
+; 15                                               ; 0                           ;
+; 16                                               ; 2                           ;
++--------------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.83) ; Number of LABs  (Total = 6) ;
+; Number of Distinct Inputs  (Average = 13.80) ; Number of LABs  (Total = 5) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
-; 3                                            ; 1                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 1                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 1                           ;
+; 5                                            ; 0                           ;
 ; 6                                            ; 1                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
-; 13                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 1                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
-; 17                                           ; 1                           ;
+; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
-; 19                                           ; 0                           ;
+; 19                                           ; 1                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
@@ -894,8 +895,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 24                                           ; 0                           ;
 ; 25                                           ; 0                           ;
 ; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 1                           ;
+; 27                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1047,7 +1047,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1058,9 +1058,9 @@ Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin rst_n uses I/O standard 3.3-V LVTTL at N13 File: C:/Users/msipc/Desktop/code/Fpga/LedTest/LedTest.v Line: 7
 Info (144001): Generated suppressed messages file C:/Users/msipc/Desktop/code/Fpga/LedTest/output_files/LedTest.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5674 megabytes
-    Info: Processing ended: Mon Jul 13 13:18:01 2020
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 5637 megabytes
+    Info: Processing ended: Tue Jul 14 15:14:17 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:13
 
 

@@ -1,0 +1,25 @@
+`timescale 1ns/1ps
+
+module pllTest(
+	input CLK,
+	input rst_n,
+	output clkout1,
+	output clkout2,
+	output clkout3,
+	output clkout4
+	
+);
+wire locked
+
+pll pllInst(
+	.inclk0(clk),
+	.c0(clkout1),
+	.c1(clkout2),
+	.c2(clkout3),
+	.c3(clkout4),
+	.aresetn(~rst_n),
+	.locked(locked)
+	
+	);
+endmodule
+	
