@@ -11,6 +11,8 @@ module seg_scan(
 	input[7:0]      seg_data_4,
 	input[7:0]      seg_data_5
 );
+
+//set default parameters
 parameter SCAN_FREQ = 200;     //scan frequency
 parameter CLK_FREQ = 50000000; //clock frequency
 
@@ -31,13 +33,15 @@ begin
 		if(scan_sel == 4'd5)
 			scan_sel <= 4'd0;
 		else
-			scan_sel <= scan_sel + 4'd1;
+			scan_sel <= scan_sel + 4'd1;// change + to -
 	end
 	else
 		begin
-			scan_timer <= scan_timer + 32'd1;
+			scan_timer <= scan_timer + 32'd1;//change + to -
 		end
 end
+
+
 always@(posedge clk or negedge rst_n)
 begin
 	if(rst_n == 1'b0)
@@ -81,11 +85,13 @@ begin
 				seg_sel <= 6'b01_1111;
 				seg_data <= seg_data_5;
 			end
+			
 			default:
 			begin
 				seg_sel <= 6'b11_1111;
 				seg_data <= 8'hff;
 			end
+					
 		endcase
 	end
 end

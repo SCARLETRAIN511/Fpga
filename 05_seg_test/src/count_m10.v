@@ -22,6 +22,19 @@ begin
     end
     else if(en)
     begin
+	 //if want to realize the counter can change this  block
+	 
+	 //if (data == 4'd1)
+		//begin
+		//t <= 1'b1;
+		//data <= 4'd1;
+		//end
+		//else
+		//begin
+		//t <= 1'b0;
+		// data <= data - 4'd;		
+		//end
+	//end
         if(data==4'd9)
         begin
             t<= 1'b1;    //Counter to 9 to generate carry
@@ -33,6 +46,7 @@ begin
             data <= data + 4'd1;
         end
     end
+	 
     else
         t <= 1'b0;
 end

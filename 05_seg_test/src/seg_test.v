@@ -1,4 +1,4 @@
-
+	
 //code for seg test
 module seg_test(
                 input      clk,
@@ -19,12 +19,12 @@ begin
     else if(timer_cnt >= 32'd09_999_999)//change this number to change the tick speed(49_999_999 is for 1 sec tic)
     begin
         en_1hz <= 1'b1;
-        timer_cnt <= 32'd0;
+        timer_cnt <= 32'd100_000_000;//may be the initial count???
     end
     else
     begin
         en_1hz <= 1'b0;
-        timer_cnt <= timer_cnt + 32'd1; 
+        timer_cnt <= timer_cnt + 32'd1; //change + to -
     end
 end
 wire[3:0] count0;

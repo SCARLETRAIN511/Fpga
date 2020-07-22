@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seg_test
-Thu Jul 16 16:55:56 2020
+Wed Jul 22 17:02:59 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -53,13 +53,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 16 16:55:56 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 22 17:02:59 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; seg_test                                    ;
 ; Top-level Entity Name              ; seg_test                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 203                                         ;
-;     Total combinational functions  ; 203                                         ;
+; Total logic elements               ; 204                                         ;
+;     Total combinational functions  ; 204                                         ;
 ;     Dedicated logic registers      ; 111                                         ;
 ; Total registers                    ; 111                                         ;
 ; Total pins                         ; 16                                          ;
@@ -190,16 +190,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 203       ;
+; Estimated Total logic elements              ; 204       ;
 ;                                             ;           ;
-; Total combinational functions               ; 203       ;
+; Total combinational functions               ; 204       ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 123       ;
 ;     -- 3 input functions                    ; 3         ;
-;     -- <=2 input functions                  ; 77        ;
+;     -- <=2 input functions                  ; 78        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 141       ;
+;     -- normal mode                          ; 142       ;
 ;     -- arithmetic mode                      ; 62        ;
 ;                                             ;           ;
 ; Total registers                             ; 111       ;
@@ -212,8 +212,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 111       ;
-; Total fan-out                               ; 1093      ;
-; Average fan-out                             ; 3.16      ;
+; Total fan-out                               ; 1113      ;
+; Average fan-out                             ; 3.21      ;
 +---------------------------------------------+-----------+
 
 
@@ -222,7 +222,7 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
-; |seg_test                       ; 203 (45)            ; 111 (33)                  ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |seg_test                            ; seg_test    ; work         ;
+; |seg_test                       ; 204 (46)            ; 111 (33)                  ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |seg_test                            ; seg_test    ; work         ;
 ;    |count_m10:count10_m0|       ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|count_m10:count10_m0       ; count_m10   ; work         ;
 ;    |count_m10:count10_m1|       ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|count_m10:count10_m1       ; count_m10   ; work         ;
 ;    |count_m10:count10_m2|       ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|count_m10:count10_m2       ; count_m10   ; work         ;
@@ -256,8 +256,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 111   ;
-; Number of registers using Synchronous Clear  ; 64    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 111   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 21    ;
@@ -385,20 +385,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 16                          ;
 ; cycloneiii_ff         ; 111                         ;
 ;     CLR               ; 26                          ;
-;     CLR SCLR          ; 64                          ;
+;     CLR SCLR          ; 32                          ;
+;     CLR SLD           ; 32                          ;
 ;     ENA CLR           ; 21                          ;
-; cycloneiii_lcell_comb ; 217                         ;
+; cycloneiii_lcell_comb ; 218                         ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 62                          ;
-;     normal            ; 155                         ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 156                         ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 22                          ;
 ;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 123                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.99                        ;
+; Average LUT depth     ; 2.98                        ;
 +-----------------------+-----------------------------+
 
 
@@ -407,7 +408,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -417,7 +418,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Jul 16 16:55:34 2020
+    Info: Processing started: Wed Jul 22 17:02:43 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seg_test -c seg_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -433,21 +434,21 @@ Info (12127): Elaborating entity "seg_test" for the top level hierarchy
 Info (12128): Elaborating entity "count_m10" for hierarchy "count_m10:count10_m0" File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_test.v Line: 39
 Info (12128): Elaborating entity "seg_decoder" for hierarchy "seg_decoder:seg_decoder_m0" File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_test.v Line: 99
 Info (12128): Elaborating entity "seg_scan" for hierarchy "seg_scan:seg_scan_m0" File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_test.v Line: 138
-Info (13000): Registers with preset signals will power-up high File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_scan.v Line: 50
+Info (13000): Registers with preset signals will power-up high File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_scan.v Line: 54
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg_data[7]" is stuck at VCC File: C:/Users/msipc/Desktop/code/Fpga/05_seg_test/src/seg_test.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 220 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 221 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 204 logic cells
+    Info (21061): Implemented 205 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Thu Jul 16 16:55:56 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:56
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Wed Jul 22 17:02:59 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:42
 
 
