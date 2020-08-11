@@ -16,10 +16,10 @@ begin
         en_1hz <= 1'b0;
         timer_cnt <= 32'd0;
     end
-    else if(timer_cnt >= 32'd09_999_999)//change this number to change the tick speed(49_999_999 is for 1 sec tic)
+    else if(timer_cnt >= 32'd49_999_999)//change this number to change the tick speed(49_999_999 is for 1 sec tic)
     begin
         en_1hz <= 1'b1;
-        timer_cnt <= 32'd100_000_000;//may be the initial count???
+        timer_cnt <= 32'd000_000_000;//may be the initial count???
     end
     else
     begin

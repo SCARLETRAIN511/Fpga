@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for seg_test
-Wed Jul 22 17:03:17 2020
+Tue Aug 11 16:21:11 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.8%      ;
+;     Processors 2-6         ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -121,7 +121,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 205.51 MHz ; 205.51 MHz      ; clk        ;      ;
+; 208.81 MHz ; 208.81 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -137,7 +137,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; clk   ; -3.866 ; -297.280           ;
+; clk   ; -3.789 ; -297.626           ;
 +-------+--------+--------------------+
 
 
@@ -176,106 +176,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.866 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.786      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.812 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.239      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.796 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.223      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.779 ; timer_cnt[11]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.700      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.770 ; timer_cnt[12]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.691      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.744 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.574     ; 4.171      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.732 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.652      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.712 ; timer_cnt[1]                        ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.633      ;
-; -3.685 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.081     ; 4.605      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.789 ; timer_cnt[4]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.708      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.770 ; timer_cnt[23]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.575     ; 4.196      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.752 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.080     ; 4.673      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.702 ; timer_cnt[19]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.080     ; 4.623      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.694 ; timer_cnt[1]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.613      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.687 ; timer_cnt[8]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.606      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.685 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.572     ; 4.114      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.651 ; timer_cnt[11]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.082     ; 4.570      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
+; -3.614 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.079     ; 4.536      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -284,73 +284,72 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.453 ; count_m10:count10_m5|data[3]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m5|data[1]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m4|data[3]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
 ; 0.453 ; count_m10:count10_m3|data[3]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
 ; 0.453 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; seg_scan:seg_scan_m0|scan_sel[2]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.453 ; seg_scan:seg_scan_m0|scan_sel[3]    ; seg_scan:seg_scan_m0|scan_sel[3]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
-; 0.454 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
-; 0.454 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
-; 0.454 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.453 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.453 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.746      ;
+; 0.454 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m5|data[3]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m5|data[1]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m4|data[3]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m1|data[3]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
-; 0.454 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m0|data[3]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m0|data[1]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
-; 0.465 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[0]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.758      ;
-; 0.465 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[0]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.758      ;
+; 0.454 ; seg_scan:seg_scan_m0|scan_sel[2]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; seg_scan:seg_scan_m0|scan_sel[3]    ; seg_scan:seg_scan_m0|scan_sel[3]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.465 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[0]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.758      ;
-; 0.465 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[0]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.758      ;
-; 0.466 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
+; 0.465 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.758      ;
+; 0.466 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[0]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
+; 0.466 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[0]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
+; 0.466 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[0]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
 ; 0.466 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[0]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
-; 0.524 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.817      ;
-; 0.525 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.081      ; 0.818      ;
-; 0.549 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.842      ;
-; 0.564 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.857      ;
-; 0.565 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.858      ;
-; 0.566 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.858      ;
-; 0.567 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.860      ;
-; 0.580 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.872      ;
-; 0.586 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.878      ;
-; 0.622 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.574      ; 1.408      ;
-; 0.623 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.574      ; 1.409      ;
-; 0.625 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.411      ;
-; 0.631 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.417      ;
-; 0.632 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.418      ;
-; 0.632 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.418      ;
-; 0.634 ; seg_scan:seg_scan_m0|scan_timer[26] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.420      ;
-; 0.640 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.574      ; 1.426      ;
-; 0.641 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.427      ;
-; 0.660 ; timer_cnt[17]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.409      ;
-; 0.671 ; timer_cnt[28]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.420      ;
-; 0.671 ; timer_cnt[24]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.420      ;
-; 0.677 ; timer_cnt[16]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.426      ;
-; 0.716 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.008      ;
-; 0.721 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.014      ;
-; 0.721 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.013      ;
-; 0.725 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.017      ;
+; 0.466 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[0]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
+; 0.527 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.819      ;
+; 0.527 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.080      ; 0.819      ;
+; 0.554 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.846      ;
+; 0.557 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.850      ;
+; 0.564 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.857      ;
+; 0.565 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.081      ; 0.858      ;
+; 0.566 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.858      ;
+; 0.567 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.859      ;
+; 0.569 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.861      ;
+; 0.571 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.863      ;
+; 0.571 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.080      ; 0.863      ;
+; 0.623 ; timer_cnt[29]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.410      ;
+; 0.624 ; timer_cnt[25]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.411      ;
+; 0.631 ; timer_cnt[22]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.418      ;
+; 0.632 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.573      ; 1.417      ;
+; 0.633 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.573      ; 1.418      ;
+; 0.633 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.573      ; 1.418      ;
+; 0.635 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.572      ; 1.419      ;
+; 0.642 ; timer_cnt[28]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.429      ;
+; 0.642 ; timer_cnt[24]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.429      ;
+; 0.644 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.572      ; 1.428      ;
+; 0.718 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.010      ;
+; 0.727 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.020      ;
+; 0.738 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.031      ;
 ; 0.741 ; seg_scan:seg_scan_m0|scan_timer[15] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.053      ;
 ; 0.742 ; seg_scan:seg_scan_m0|scan_timer[13] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.054      ;
-; 0.743 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.055      ;
-; 0.743 ; seg_scan:seg_scan_m0|scan_timer[27] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.055      ;
-; 0.744 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.100      ; 1.056      ;
-; 0.744 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.099      ; 1.055      ;
-; 0.745 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.057      ;
-; 0.745 ; seg_scan:seg_scan_m0|scan_timer[4]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.100      ; 1.057      ;
-; 0.746 ; timer_cnt[18]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.099      ; 1.057      ;
-; 0.746 ; timer_cnt[25]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.099      ; 1.057      ;
-; 0.747 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.059      ;
-; 0.750 ; count_m10:count10_m3|t              ; count_m10:count10_m4|t              ; clk          ; clk         ; 0.000        ; 0.081      ; 1.043      ;
-; 0.754 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.540      ;
-; 0.756 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.574      ; 1.542      ;
+; 0.743 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.055      ;
+; 0.744 ; timer_cnt[31]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.100      ; 1.056      ;
+; 0.744 ; seg_scan:seg_scan_m0|scan_timer[7]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.100      ; 1.056      ;
+; 0.745 ; timer_cnt[23]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.100      ; 1.057      ;
+; 0.745 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.100      ; 1.057      ;
+; 0.746 ; timer_cnt[30]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.100      ; 1.058      ;
+; 0.747 ; timer_cnt[26]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.100      ; 1.059      ;
+; 0.754 ; timer_cnt[29]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.541      ;
+; 0.754 ; timer_cnt[21]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.541      ;
+; 0.755 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.573      ; 1.540      ;
+; 0.755 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.573      ; 1.540      ;
+; 0.756 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.572      ; 1.540      ;
 ; 0.760 ; timer_cnt[3]                        ; timer_cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
 ; 0.760 ; timer_cnt[15]                       ; timer_cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
 ; 0.760 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[3]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
@@ -361,29 +360,30 @@ No paths to report.
 ; 0.761 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[1]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
 ; 0.761 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[5]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
 ; 0.761 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[11] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
-; 0.761 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
 ; 0.762 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.054      ;
-; 0.762 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.055      ;
-; 0.762 ; seg_scan:seg_scan_m0|scan_timer[29] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.055      ;
-; 0.762 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.574      ; 1.548      ;
-; 0.762 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.574      ; 1.548      ;
-; 0.763 ; timer_cnt[6]                        ; timer_cnt[6]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.763 ; timer_cnt[2]                        ; timer_cnt[2]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
+; 0.762 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.054      ;
 ; 0.763 ; timer_cnt[7]                        ; timer_cnt[7]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
+; 0.763 ; timer_cnt[21]                       ; timer_cnt[21]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.763 ; timer_cnt[2]                        ; timer_cnt[2]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
+; 0.763 ; timer_cnt[6]                        ; timer_cnt[6]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
 ; 0.763 ; timer_cnt[9]                        ; timer_cnt[9]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
 ; 0.763 ; timer_cnt[17]                       ; timer_cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
 ; 0.763 ; timer_cnt[27]                       ; timer_cnt[27]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.763 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
 ; 0.763 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[2]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.763 ; seg_scan:seg_scan_m0|scan_timer[7]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
+; 0.763 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
 ; 0.763 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[9]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.763 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
-; 0.763 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.056      ;
+; 0.763 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.763 ; seg_scan:seg_scan_m0|scan_timer[27] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.763 ; seg_scan:seg_scan_m0|scan_timer[29] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.055      ;
+; 0.763 ; timer_cnt[27]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.575      ; 1.550      ;
 ; 0.764 ; timer_cnt[4]                        ; timer_cnt[4]                        ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; timer_cnt[12]                       ; timer_cnt[12]                       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
-; 0.764 ; timer_cnt[16]                       ; timer_cnt[16]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
-; 0.764 ; timer_cnt[31]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
+; 0.764 ; timer_cnt[14]                       ; timer_cnt[14]                       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[14] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; seg_scan:seg_scan_m0|scan_timer[4]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
 ; 0.764 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[12] ; clk          ; clk         ; 0.000        ; 0.081      ; 1.057      ;
+; 0.764 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 0.000        ; 0.080      ; 1.056      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -398,7 +398,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 218.63 MHz ; 218.63 MHz      ; clk        ;      ;
+; 222.57 MHz ; 222.57 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -408,7 +408,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clk   ; -3.574 ; -271.070          ;
+; clk   ; -3.493 ; -271.320          ;
 +-------+--------+-------------------+
 
 
@@ -447,106 +447,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.574 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.504      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.518 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.980      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.515 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.977      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.467 ; timer_cnt[11]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.398      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.464 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.540     ; 3.926      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.457 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.387      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.455 ; timer_cnt[12]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.071     ; 4.386      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.420 ; timer_cnt[18]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.496     ; 3.926      ;
-; -3.407 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.337      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.493 ; timer_cnt[4]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.421      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.476 ; timer_cnt[23]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.537     ; 3.941      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.451 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.072     ; 4.381      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.410 ; timer_cnt[19]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.073     ; 4.339      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.407 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.535     ; 3.874      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.389 ; timer_cnt[1]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.317      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.380 ; timer_cnt[8]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.308      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.343 ; timer_cnt[11]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.074     ; 4.271      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
+; -3.338 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.071     ; 4.269      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -555,106 +555,106 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.401 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m3|data[3]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m1|data[3]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
-; 0.401 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.402 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m5|data[3]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m5|data[1]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m4|data[3]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m0|data[3]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m0|data[1]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; seg_scan:seg_scan_m0|scan_sel[2]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; seg_scan:seg_scan_m0|scan_sel[3]    ; seg_scan:seg_scan_m0|scan_sel[3]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.416 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[0]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.684      ;
+; 0.416 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.684      ;
+; 0.416 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[0]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.684      ;
 ; 0.417 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[0]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
 ; 0.417 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[0]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
-; 0.417 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
 ; 0.417 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[0]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
 ; 0.417 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[0]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
-; 0.483 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.750      ;
-; 0.483 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.750      ;
-; 0.505 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.772      ;
-; 0.523 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.791      ;
-; 0.524 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.792      ;
-; 0.527 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.794      ;
-; 0.528 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.795      ;
-; 0.532 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.800      ;
-; 0.538 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.806      ;
-; 0.560 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.295      ;
-; 0.562 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.294      ;
-; 0.562 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.294      ;
-; 0.562 ; seg_scan:seg_scan_m0|scan_timer[26] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.297      ;
-; 0.563 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.537      ; 1.295      ;
-; 0.564 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.537      ; 1.296      ;
-; 0.565 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.300      ;
-; 0.574 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.309      ;
-; 0.579 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.311      ;
-; 0.606 ; timer_cnt[28]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.297      ;
-; 0.607 ; timer_cnt[17]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.298      ;
-; 0.607 ; timer_cnt[24]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.298      ;
-; 0.620 ; timer_cnt[16]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.311      ;
-; 0.634 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.902      ;
-; 0.646 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.913      ;
-; 0.647 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.914      ;
-; 0.648 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.915      ;
-; 0.656 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.537      ; 1.388      ;
-; 0.661 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.396      ;
-; 0.668 ; count_m10:count10_m3|t              ; count_m10:count10_m4|t              ; clk          ; clk         ; 0.000        ; 0.072      ; 0.935      ;
-; 0.681 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.541      ; 1.417      ;
-; 0.681 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.416      ;
-; 0.682 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.417      ;
-; 0.684 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.416      ;
-; 0.686 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.537      ; 1.418      ;
-; 0.686 ; seg_scan:seg_scan_m0|scan_timer[10] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.537      ; 1.418      ;
+; 0.484 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.751      ;
+; 0.485 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.752      ;
+; 0.515 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.783      ;
+; 0.525 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.793      ;
+; 0.526 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.794      ;
+; 0.526 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.794      ;
+; 0.526 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.793      ;
+; 0.527 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.794      ;
+; 0.527 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.794      ;
+; 0.529 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.796      ;
+; 0.530 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.797      ;
+; 0.562 ; timer_cnt[22]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.294      ;
+; 0.563 ; timer_cnt[29]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.295      ;
+; 0.564 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.535      ; 1.294      ;
+; 0.565 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.295      ;
+; 0.566 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.296      ;
+; 0.566 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.296      ;
+; 0.568 ; timer_cnt[25]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.300      ;
+; 0.581 ; timer_cnt[28]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.313      ;
+; 0.582 ; timer_cnt[24]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.314      ;
+; 0.583 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.313      ;
+; 0.649 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.917      ;
+; 0.649 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.916      ;
+; 0.657 ; timer_cnt[29]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.389      ;
+; 0.657 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.925      ;
+; 0.657 ; timer_cnt[21]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.389      ;
+; 0.658 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.388      ;
+; 0.658 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.388      ;
+; 0.658 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.535      ; 1.388      ;
+; 0.682 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.949      ;
+; 0.686 ; timer_cnt[27]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.418      ;
+; 0.686 ; timer_cnt[20]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.418      ;
 ; 0.687 ; seg_scan:seg_scan_m0|scan_timer[15] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.090      ; 0.972      ;
 ; 0.687 ; seg_scan:seg_scan_m0|scan_timer[13] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.090      ; 0.972      ;
-; 0.688 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.091      ; 0.974      ;
-; 0.688 ; seg_scan:seg_scan_m0|scan_timer[27] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.091      ; 0.974      ;
-; 0.688 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.420      ;
-; 0.689 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.973      ;
-; 0.690 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.090      ; 0.975      ;
-; 0.690 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.091      ; 0.976      ;
-; 0.692 ; timer_cnt[25]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.976      ;
-; 0.693 ; seg_scan:seg_scan_m0|scan_timer[4]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.090      ; 0.978      ;
-; 0.694 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.091      ; 0.980      ;
-; 0.694 ; timer_cnt[18]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.089      ; 0.978      ;
-; 0.698 ; timer_cnt[27]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.389      ;
-; 0.700 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.540      ; 1.435      ;
-; 0.700 ; seg_scan:seg_scan_m0|scan_timer[0]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.432      ;
-; 0.701 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.537      ; 1.433      ;
-; 0.703 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.971      ;
-; 0.704 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[3]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.972      ;
-; 0.704 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[5]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.972      ;
+; 0.687 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.417      ;
+; 0.687 ; timer_cnt[28]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.419      ;
+; 0.688 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.418      ;
+; 0.688 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.090      ; 0.973      ;
+; 0.688 ; seg_scan:seg_scan_m0|scan_timer[10] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.418      ;
+; 0.688 ; seg_scan:seg_scan_m0|scan_timer[18] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.418      ;
+; 0.688 ; seg_scan:seg_scan_m0|scan_timer[4]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.535      ; 1.418      ;
+; 0.690 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.090      ; 0.975      ;
+; 0.690 ; timer_cnt[31]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.090      ; 0.975      ;
+; 0.691 ; timer_cnt[23]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.090      ; 0.976      ;
+; 0.691 ; seg_scan:seg_scan_m0|scan_timer[7]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.090      ; 0.976      ;
+; 0.694 ; timer_cnt[30]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.090      ; 0.979      ;
+; 0.694 ; timer_cnt[26]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.090      ; 0.979      ;
+; 0.698 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.965      ;
+; 0.699 ; timer_cnt[22]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.537      ; 1.431      ;
+; 0.700 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.967      ;
+; 0.702 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.970      ;
+; 0.703 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.073      ; 0.971      ;
+; 0.704 ; seg_scan:seg_scan_m0|scan_timer[18] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.535      ; 1.434      ;
+; 0.705 ; timer_cnt[21]                       ; timer_cnt[21]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.973      ;
 ; 0.705 ; timer_cnt[3]                        ; timer_cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.705 ; timer_cnt[5]                        ; timer_cnt[5]                        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.705 ; timer_cnt[13]                       ; timer_cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.705 ; timer_cnt[15]                       ; timer_cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
-; 0.705 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[11] ; clk          ; clk         ; 0.000        ; 0.073      ; 0.973      ;
-; 0.705 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
-; 0.705 ; timer_cnt[23]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.496      ; 1.396      ;
+; 0.705 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.973      ;
+; 0.705 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.973      ;
+; 0.705 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[3]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
+; 0.705 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[5]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.706 ; timer_cnt[11]                       ; timer_cnt[11]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
-; 0.706 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
-; 0.706 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[1]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.974      ;
+; 0.706 ; timer_cnt[17]                       ; timer_cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.974      ;
+; 0.706 ; timer_cnt[27]                       ; timer_cnt[27]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.974      ;
+; 0.706 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[11] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
 ; 0.706 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
-; 0.706 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
 ; 0.706 ; seg_scan:seg_scan_m0|scan_timer[29] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
-; 0.706 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.973      ;
 ; 0.707 ; timer_cnt[1]                        ; timer_cnt[1]                        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
-; 0.707 ; timer_cnt[17]                       ; timer_cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
-; 0.707 ; timer_cnt[27]                       ; timer_cnt[27]                       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
-; 0.707 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[9]  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.975      ;
-; 0.707 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
+; 0.707 ; timer_cnt[22]                       ; timer_cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.073      ; 0.975      ;
+; 0.707 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[1]  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
+; 0.707 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.072      ; 0.974      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -669,7 +669,7 @@ No synchronizer chains to report.
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clk   ; -1.024 ; -64.853           ;
+; clk   ; -0.976 ; -64.597           ;
 +-------+--------+-------------------+
 
 
@@ -699,7 +699,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; clk   ; -3.000 ; -147.236                        ;
+; clk   ; -3.000 ; -147.188                        ;
 +-------+--------+---------------------------------+
 
 
@@ -708,106 +708,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.024 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.974      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.005 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.756      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -1.000 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.751      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.994 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.745      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.970 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.920      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.967 ; timer_cnt[18]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.223     ; 1.731      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.964 ; timer_cnt[12]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.915      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[16]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[23]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[26]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[31]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.958 ; timer_cnt[11]                       ; timer_cnt[30]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.909      ;
-; -0.942 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.976 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.037     ; 1.926      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.969 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.921      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.961 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.236     ; 1.712      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.955 ; timer_cnt[23]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.236     ; 1.706      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.942 ; timer_cnt[4]                        ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.037     ; 1.892      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[21]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[17]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[20]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[22]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[24]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[25]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[27]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[28]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.937 ; timer_cnt[19]                       ; timer_cnt[29]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.888      ;
+; -0.932 ; timer_cnt[1]                        ; timer_cnt[18]                       ; clk          ; clk         ; 1.000        ; -0.036     ; 1.883      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[18] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[20] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[30] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[26] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[28] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
+; -0.928 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 1.000        ; -0.035     ; 1.880      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -816,106 +816,106 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.186 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; count_m10:count10_m3|data[3]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.307      ;
+; 0.187 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m5|data[3]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m5|data[1]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m4|data[3]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; count_m10:count10_m2|data[3]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; count_m10:count10_m2|data[1]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m1|data[3]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m0|data[3]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m0|data[1]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; seg_scan:seg_scan_m0|scan_sel[2]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; seg_scan:seg_scan_m0|scan_sel[3]    ; seg_scan:seg_scan_m0|scan_sel[3]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; seg_scan:seg_scan_m0|scan_sel[1]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.193 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[0]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.314      ;
+; 0.193 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.314      ;
 ; 0.194 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[0]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
 ; 0.194 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[0]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
-; 0.194 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[0]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
+; 0.194 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[0]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
 ; 0.194 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[0]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
 ; 0.194 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[0]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
-; 0.212 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.332      ;
 ; 0.213 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[2]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.333      ;
-; 0.224 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.344      ;
-; 0.225 ; count_m10:count10_m5|data[2]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.345      ;
-; 0.233 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.354      ;
-; 0.233 ; count_m10:count10_m3|data[0]        ; count_m10:count10_m3|data[2]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.354      ;
-; 0.236 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.356      ;
-; 0.238 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.358      ;
-; 0.244 ; count_m10:count10_m1|data[0]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.364      ;
-; 0.253 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.236      ; 0.573      ;
-; 0.253 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.236      ; 0.573      ;
-; 0.255 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.575      ;
+; 0.213 ; seg_scan:seg_scan_m0|scan_sel[0]    ; seg_scan:seg_scan_m0|scan_sel[1]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.333      ;
+; 0.229 ; count_m10:count10_m3|data[1]        ; count_m10:count10_m3|data[3]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.350      ;
+; 0.233 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[3]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.354      ;
+; 0.233 ; count_m10:count10_m2|data[0]        ; count_m10:count10_m2|data[2]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.354      ;
+; 0.234 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.354      ;
+; 0.234 ; count_m10:count10_m1|data[1]        ; count_m10:count10_m1|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.354      ;
+; 0.236 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.356      ;
+; 0.237 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.357      ;
+; 0.237 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.357      ;
+; 0.237 ; count_m10:count10_m4|data[1]        ; count_m10:count10_m4|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.357      ;
+; 0.254 ; timer_cnt[29]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.236      ; 0.574      ;
+; 0.255 ; timer_cnt[25]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.236      ; 0.575      ;
+; 0.263 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.236      ; 0.583      ;
+; 0.264 ; timer_cnt[22]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.236      ; 0.584      ;
 ; 0.264 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.584      ;
-; 0.264 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.584      ;
 ; 0.265 ; seg_scan:seg_scan_m0|scan_timer[12] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.585      ;
-; 0.266 ; seg_scan:seg_scan_m0|scan_timer[26] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.586      ;
-; 0.267 ; timer_cnt[17]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.223      ; 0.574      ;
-; 0.267 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.236      ; 0.587      ;
-; 0.267 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.587      ;
-; 0.273 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.393      ;
-; 0.275 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.395      ;
-; 0.277 ; count_m10:count10_m5|data[0]        ; count_m10:count10_m5|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.397      ;
-; 0.277 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.397      ;
-; 0.278 ; timer_cnt[24]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.223      ; 0.585      ;
-; 0.279 ; timer_cnt[28]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.223      ; 0.586      ;
-; 0.280 ; timer_cnt[16]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.223      ; 0.587      ;
-; 0.283 ; count_m10:count10_m3|t              ; count_m10:count10_m4|t              ; clk          ; clk         ; 0.000        ; 0.036      ; 0.403      ;
+; 0.265 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.585      ;
+; 0.268 ; seg_scan:seg_scan_m0|scan_timer[20] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.236      ; 0.588      ;
+; 0.268 ; timer_cnt[24]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.236      ; 0.588      ;
+; 0.269 ; timer_cnt[28]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.236      ; 0.589      ;
+; 0.276 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.397      ;
+; 0.276 ; count_m10:count10_m0|data[0]        ; count_m10:count10_m0|data[2]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.396      ;
+; 0.282 ; count_m10:count10_m2|data[2]        ; count_m10:count10_m2|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.403      ;
+; 0.294 ; count_m10:count10_m4|data[2]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.414      ;
+; 0.295 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.415      ;
 ; 0.295 ; seg_scan:seg_scan_m0|scan_timer[15] ; seg_scan:seg_scan_m0|scan_timer[15] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.423      ;
+; 0.296 ; timer_cnt[31]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.424      ;
+; 0.296 ; count_m10:count10_m0|data[2]        ; count_m10:count10_m0|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.416      ;
 ; 0.296 ; seg_scan:seg_scan_m0|scan_timer[13] ; seg_scan:seg_scan_m0|scan_timer[13] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.424      ;
-; 0.297 ; count_m10:count10_m3|data[2]        ; count_m10:count10_m3|data[1]        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.418      ;
-; 0.297 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.044      ; 0.425      ;
-; 0.297 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.425      ;
-; 0.297 ; seg_scan:seg_scan_m0|scan_timer[27] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.425      ;
-; 0.298 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.426      ;
-; 0.298 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.043      ; 0.425      ;
-; 0.299 ; seg_scan:seg_scan_m0|scan_timer[4]  ; seg_scan:seg_scan_m0|scan_timer[4]  ; clk          ; clk         ; 0.000        ; 0.044      ; 0.427      ;
-; 0.299 ; seg_scan:seg_scan_m0|scan_timer[24] ; seg_scan:seg_scan_m0|scan_timer[24] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.427      ;
-; 0.299 ; timer_cnt[25]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.043      ; 0.426      ;
-; 0.300 ; timer_cnt[18]                       ; timer_cnt[18]                       ; clk          ; clk         ; 0.000        ; 0.043      ; 0.427      ;
-; 0.302 ; timer_cnt[15]                       ; timer_cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.423      ;
-; 0.303 ; timer_cnt[3]                        ; timer_cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; timer_cnt[5]                        ; timer_cnt[5]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; timer_cnt[13]                       ; timer_cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; timer_cnt[31]                       ; timer_cnt[31]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[3]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[5]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
+; 0.297 ; seg_scan:seg_scan_m0|scan_timer[7]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.044      ; 0.425      ;
+; 0.297 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.425      ;
+; 0.298 ; timer_cnt[23]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.426      ;
+; 0.298 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.044      ; 0.426      ;
+; 0.299 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[3]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.419      ;
+; 0.299 ; timer_cnt[30]                       ; timer_cnt[30]                       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.427      ;
+; 0.300 ; count_m10:count10_m1|data[2]        ; count_m10:count10_m1|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.420      ;
+; 0.300 ; timer_cnt[26]                       ; timer_cnt[26]                       ; clk          ; clk         ; 0.000        ; 0.044      ; 0.428      ;
+; 0.303 ; timer_cnt[15]                       ; timer_cnt[15]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.423      ;
 ; 0.303 ; seg_scan:seg_scan_m0|scan_timer[31] ; seg_scan:seg_scan_m0|scan_timer[31] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.424      ;
-; 0.303 ; count_m10:count10_m4|data[0]        ; count_m10:count10_m4|data[1]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.423      ;
-; 0.304 ; timer_cnt[6]                        ; timer_cnt[6]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[1]                        ; timer_cnt[1]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[7]                        ; timer_cnt[7]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[11]                       ; timer_cnt[11]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[17]                       ; timer_cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; timer_cnt[27]                       ; timer_cnt[27]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[1]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; seg_scan:seg_scan_m0|scan_timer[7]  ; seg_scan:seg_scan_m0|scan_timer[7]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[11] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
+; 0.304 ; timer_cnt[3]                        ; timer_cnt[3]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.424      ;
+; 0.304 ; timer_cnt[5]                        ; timer_cnt[5]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.424      ;
+; 0.304 ; timer_cnt[13]                       ; timer_cnt[13]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.424      ;
+; 0.304 ; seg_scan:seg_scan_m0|scan_timer[3]  ; seg_scan:seg_scan_m0|scan_timer[3]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.424      ;
+; 0.304 ; seg_scan:seg_scan_m0|scan_timer[5]  ; seg_scan:seg_scan_m0|scan_timer[5]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.424      ;
+; 0.304 ; seg_scan:seg_scan_m0|scan_timer[17] ; seg_scan:seg_scan_m0|scan_timer[17] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
 ; 0.304 ; seg_scan:seg_scan_m0|scan_timer[19] ; seg_scan:seg_scan_m0|scan_timer[19] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.304 ; seg_scan:seg_scan_m0|scan_timer[21] ; seg_scan:seg_scan_m0|scan_timer[21] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
+; 0.304 ; seg_scan:seg_scan_m0|scan_timer[27] ; seg_scan:seg_scan_m0|scan_timer[27] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
 ; 0.304 ; seg_scan:seg_scan_m0|scan_timer[29] ; seg_scan:seg_scan_m0|scan_timer[29] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.425      ;
-; 0.305 ; timer_cnt[2]                        ; timer_cnt[2]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; timer_cnt[8]                        ; timer_cnt[8]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; timer_cnt[9]                        ; timer_cnt[9]                        ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; timer_cnt[16]                       ; timer_cnt[16]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; timer_cnt[22]                       ; timer_cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; timer_cnt[23]                       ; timer_cnt[23]                       ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[14] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[2]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; seg_scan:seg_scan_m0|scan_timer[8]  ; seg_scan:seg_scan_m0|scan_timer[8]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; seg_scan:seg_scan_m0|scan_timer[9]  ; seg_scan:seg_scan_m0|scan_timer[9]  ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.305 ; timer_cnt[7]                        ; timer_cnt[7]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[21]                       ; timer_cnt[21]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[1]                        ; timer_cnt[1]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[6]                        ; timer_cnt[6]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[11]                       ; timer_cnt[11]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[17]                       ; timer_cnt[17]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[19]                       ; timer_cnt[19]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[27]                       ; timer_cnt[27]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; timer_cnt[29]                       ; timer_cnt[29]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; seg_scan:seg_scan_m0|scan_timer[1]  ; seg_scan:seg_scan_m0|scan_timer[1]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; seg_scan:seg_scan_m0|scan_timer[6]  ; seg_scan:seg_scan_m0|scan_timer[6]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
+; 0.305 ; seg_scan:seg_scan_m0|scan_timer[11] ; seg_scan:seg_scan_m0|scan_timer[11] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.425      ;
 ; 0.305 ; seg_scan:seg_scan_m0|scan_timer[16] ; seg_scan:seg_scan_m0|scan_timer[16] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
-; 0.305 ; seg_scan:seg_scan_m0|scan_timer[22] ; seg_scan:seg_scan_m0|scan_timer[22] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.305 ; seg_scan:seg_scan_m0|scan_timer[23] ; seg_scan:seg_scan_m0|scan_timer[23] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.305 ; seg_scan:seg_scan_m0|scan_timer[25] ; seg_scan:seg_scan_m0|scan_timer[25] ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.306 ; timer_cnt[2]                        ; timer_cnt[2]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; timer_cnt[8]                        ; timer_cnt[8]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; timer_cnt[9]                        ; timer_cnt[9]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; timer_cnt[14]                       ; timer_cnt[14]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; timer_cnt[22]                       ; timer_cnt[22]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; timer_cnt[25]                       ; timer_cnt[25]                       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; seg_scan:seg_scan_m0|scan_timer[14] ; seg_scan:seg_scan_m0|scan_timer[14] ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.306 ; seg_scan:seg_scan_m0|scan_timer[2]  ; seg_scan:seg_scan_m0|scan_timer[2]  ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -930,10 +930,10 @@ No synchronizer chains to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.866   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -3.866   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -297.28  ; 0.0   ; 0.0      ; 0.0     ; -168.057            ;
-;  clk             ; -297.280 ; 0.000 ; N/A      ; N/A     ; -168.057            ;
+; Worst-case Slack ; -3.789   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -3.789   ; 0.186 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -297.626 ; 0.0   ; 0.0      ; 0.0     ; -168.057            ;
+;  clk             ; -297.626 ; 0.000 ; N/A      ; N/A     ; -168.057            ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -1156,7 +1156,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Jul 22 17:03:13 2020
+    Info: Processing started: Tue Aug 11 16:21:08 2020
 Info: Command: quartus_sta seg_test -c seg_test
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1173,10 +1173,10 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.866
+Info (332146): Worst-case setup slack is -3.789
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.866            -297.280 clk 
+    Info (332119):    -3.789            -297.626 clk 
 Info (332146): Worst-case hold slack is 0.453
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1193,10 +1193,10 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.574
+Info (332146): Worst-case setup slack is -3.493
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.574            -271.070 clk 
+    Info (332119):    -3.493            -271.320 clk 
 Info (332146): Worst-case hold slack is 0.401
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1211,10 +1211,10 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.024
+Info (332146): Worst-case setup slack is -0.976
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.024             -64.853 clk 
+    Info (332119):    -0.976             -64.597 clk 
 Info (332146): Worst-case hold slack is 0.186
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1224,13 +1224,13 @@ Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -147.236 clk 
+    Info (332119):    -3.000            -147.188 clk 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Wed Jul 22 17:03:17 2020
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Tue Aug 11 16:21:11 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
