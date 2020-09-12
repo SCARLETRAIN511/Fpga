@@ -19,7 +19,7 @@ begin
     else if(timer_cnt >= 32'd49_999_999)//change this number to change the tick speed(49_999_999 is for 1 sec tic)
     begin
         en_1hz <= 1'b1;
-        timer_cnt <= 32'd000_000_000;//may be the initial count???
+        timer_cnt <= 32'd000_000_000;//set 0
     end
     else
     begin
@@ -27,100 +27,103 @@ begin
         timer_cnt <= timer_cnt + 32'd1; //change + to -
     end
 end
-wire[3:0] count0;
-wire t0;
-count_m10 count10_m0(
-    .clk    (clk),
-    .rst_n  (rst_n),
-    .en     (en_1hz),
-    .clr    (1'b0),
-    .data   (count0),
-    .t      (t0)
- );
-wire[3:0] count1;
-wire t1;
-count_m10 count10_m1(
-     .clk    (clk),
-     .rst_n  (rst_n),
-     .en     (t0),
-     .clr    (1'b0),
-     .data   (count1),
-     .t      (t1)
- );
 
-wire[3:0] count2;
-wire t2;
-count_m10 count10_m2(
-    .clk   (clk),
-    .rst_n (rst_n),
-    .en    (t1),
-    .clr   (1'b0),
-    .data  (count2),
-    .t     (t2)
-);
-
-wire[3:0] count3;
-wire t3;
-count_m10 count10_m3(
-    .clk   (clk),
-    .rst_n (rst_n),
-    .en    (t2),
-    .clr   (1'b0),
-    .data  (count3),
-    .t     (t3)
-);
-
-wire[3:0] count4;
-wire t4;
-count_m10 count10_m4(
-    .clk   (clk),
-    .rst_n (rst_n),
-    .en    (t3),
-    .clr   (1'b0),
-    .data  (count4),
-    .t     (t4)
-);
-
-wire[3:0] count5;
-wire t5;
-count_m10 count10_m5(
-    .clk   (clk),
-    .rst_n (rst_n),
-    .en    (t4),
-    .clr   (1'b0),
-    .data  (count5),
-    .t     (t5)
-);
+wire[23:0] count;
+counter_24 counter(en_1hz, rst_n, count);
+//wire[3:0] count0;
+//wire t0;
+//count_m10 count10_m0(
+//    .clk    (clk),
+//    .rst_n  (rst_n),
+//    .en     (en_1hz),
+//    .clr    (1'b0),
+//    .data   (count0),
+//    .t      (t0)
+// );
+//wire[3:0] count1;
+//wire t1;
+//count_m10 count10_m1(
+//     .clk    (clk),
+//     .rst_n  (rst_n),
+//     .en     (t0),
+//     .clr    (1'b0),
+//     .data   (count1),
+//     .t      (t1)
+// );
+//
+//wire[3:0] count2;
+//wire t2;
+//count_m10 count10_m2(
+//    .clk   (clk),
+//    .rst_n (rst_n),
+//    .en    (t1),
+//    .clr   (1'b0),
+//    .data  (count2),
+//    .t     (t2)
+//);
+//
+//wire[3:0] count3;
+//wire t3;
+//count_m10 count10_m3(
+//    .clk   (clk),
+//    .rst_n (rst_n),
+//    .en    (t2),
+//    .clr   (1'b0),
+//    .data  (count3),
+//    .t     (t3)
+//);
+//
+//wire[3:0] count4;
+//wire t4;
+//count_m10 count10_m4(
+//    .clk   (clk),
+//    .rst_n (rst_n),
+//    .en    (t3),
+//    .clr   (1'b0),
+//    .data  (count4),
+//    .t     (t4)
+//);
+//
+//wire[3:0] count5;
+//wire t5;
+//count_m10 count10_m5(
+//    .clk   (clk),
+//    .rst_n (rst_n),
+//    .en    (t4),
+//    .clr   (1'b0),
+//    .data  (count5),
+//    .t     (t5)
+//);
 
 wire[6:0] seg_data_0;
 seg_decoder seg_decoder_m0(
-    .bin_data  (count5),
+    .bin_data  (count[23:20]),
     .seg_data  (seg_data_0)
 );
 wire[6:0] seg_data_1;
 seg_decoder seg_decoder_m1(
-    .bin_data  (count4),
+    .bin_data  (count[19:16]),
     .seg_data  (seg_data_1)
 );
 wire[6:0] seg_data_2;
 seg_decoder seg_decoder_m2(
-    .bin_data  (count3),
+    .bin_data  (count[15:12]),
     .seg_data  (seg_data_2)
 );
 wire[6:0] seg_data_3;
 seg_decoder seg_decoder_m3(
-    .bin_data  (count2),
+    .bin_data  (count[11:8]),
     .seg_data  (seg_data_3)
 );
 wire[6:0] seg_data_4;
 seg_decoder seg_decoder_m4(
-    .bin_data  (count1),
+    .bin_data  (count[7:4]),
     .seg_data  (seg_data_4)
 );
 
 wire[6:0] seg_data_5;
 seg_decoder seg_decoder_m5(
-    .bin_data  (count0),
+    .bin_data  (count[3:0]),
     .seg_data  (seg_data_5)
 );
 

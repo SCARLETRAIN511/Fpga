@@ -1,0 +1,19 @@
+module counter_16(
+	input clk,
+	input rst_n,
+	output reg[15:0] count
+);
+
+always @ (posedge clk or negedge rst_n)
+begin
+	if rst_n == 0
+	begin
+		count => 16'hFFFF;
+	end
+	
+	count = count - 1;
+end
+
+initial count = 16'hFFFF;
+
+endmodule
